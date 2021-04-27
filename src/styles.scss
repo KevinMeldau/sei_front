@@ -14,7 +14,7 @@
   --fw-normal: 400;
   --fw-semi: 500;
   --fw-bold: 700;
-  --fs-h1: 4rem;
+  --fs-h1: 3rem;
   --fs-h2: 1.3rem;
   --fs-h3: 1.1rem;
   --fs-body: 1rem;
@@ -24,6 +24,7 @@
   --mgn-btm-sm: 0.8em;
   --mgn-btm-md: 1.5em;
   --mgn-btm-lg: 3em;
+  --mgn-btm-xlg: 8em;
   --pd-section: 9em;
   --pd-section-sm: 4em;
   --clr-light: #fff;
@@ -101,4 +102,10 @@ button {
 .heading {
   text-align: center;
   padding: 0 100px;
+  margin-bottom: var(--mgn-btm-xlg);
+}
+
+.columns-container {
+  display: flex;
+  width: 40vw;
 }

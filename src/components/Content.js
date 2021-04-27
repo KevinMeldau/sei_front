@@ -26,6 +26,16 @@ export default function Content() {
           minim veniam.
         </p>
       </div>
+      <div className="columns-container">
+        <div className="column">
+          <h3>Lorem Ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
+        <div className="column">
+          <h3>Lorem Ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
+      </div>
     </div>
   );
 }
