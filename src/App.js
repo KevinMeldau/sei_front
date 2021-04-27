@@ -3,16 +3,23 @@ import './App.css';
 import { useState, useEffect } from "react";
 import content from "./services/content";
 
+import Testing from "./components/Testing/Testing";
+
 function App() {
 
   useEffect(() => {
-    //call getContent
+    //get content from backend
     content.getContent();
-  }, [])
+
+    //set state to show content
+  }, []);
+
+  const [tags, setTags] = useState([]);
 
   return (
     <div className="App">
       <header className="App-header">
+        <Testing />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
