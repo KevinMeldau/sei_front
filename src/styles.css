@@ -10,18 +10,20 @@
 
 :root {
   --ff-body: "Montserrat", sans-serif;
-  --fw-light: 300;
+  --fw-light: 100;
   --fw-normal: 400;
   --fw-semi: 500;
   --fw-bold: 700;
-  --fs-h1: 7rem;
+  --fs-h1: 4rem;
   --fs-h2: 1.3rem;
   --fs-h3: 1.1rem;
   --fs-body: 1rem;
   --ls-body: 0.1em;
   --mgn-btm-none: 0;
+  --mgn-btm-xsm: 0.4em;
   --mgn-btm-sm: 0.8em;
   --mgn-btm-md: 1.5em;
+  --mgn-btm-lg: 3em;
   --pd-section: 9em;
   --pd-section-sm: 4em;
   --clr-light: #fff;
@@ -31,6 +33,8 @@
   --clr-bg: #d8d8d8;
   --clr-accent: #e600c8;
   --clr-accent-secondary: #01dad2;
+  --clr-accent-drk: #00274e;
+  --clr-btn-bg: rgba(255, 255, 255, 0.3);
 }
 
 body {
@@ -62,12 +66,19 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: var(--mgn-btm-lg);
 }
 
 .content .nav .nav-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -75,5 +86,37 @@ body {
 
 .content .nav .nav-items img {
   width: 20%;
+}
+
+.content .nav .nav-items a {
+  padding: 0 1em;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  color: var(--clr-accent-secondary);
+  font-weight: var(--fw-light);
+  text-transform: uppercase;
+  line-height: normal;
+  margin-bottom: var(--mgn-btm-xsm);
+}
+
+a {
+  color: var(--clr-light);
+  text-decoration: none;
+}
+
+button {
+  border: 1px solid var(--clr-light);
+  color: var(--clr-light);
+  background-color: var(--clr-accent-drk);
+  padding: 0.8em 2em;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.heading {
+  text-align: center;
+  padding: 0 100px;
 }
 /*# sourceMappingURL=styles.css.map */
