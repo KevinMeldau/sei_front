@@ -35,7 +35,7 @@
   --clr-accent: #e600c8;
   --clr-accent-secondary: #01dad2;
   --clr-accent-drk: #00274e;
-  --clr-btn-bg: rgba(255, 255, 255, 0.3);
+  --clr-btn-bg: rgba(255, 255, 255, 0.2);
 }
 
 body {
@@ -97,15 +97,21 @@ button {
   padding: 0.8em 2em;
   border-radius: 20px;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .heading {
   text-align: center;
   padding: 0 100px;
-  margin-bottom: var(--mgn-btm-xlg);
+  margin-bottom: var(--mgn-btm-lg);
 }
 
-.columns-container {
+.unit-btn-container {
   display: flex;
-  width: 40vw;
+  justify-content: space-evenly;
+  padding: 0 100px;
+  button {
+    padding: 0.8em 3em;
+    background-color: var(--clr-btn-bg);
+  }
 }
