@@ -36,6 +36,8 @@
   --clr-accent-secondary: #01dad2;
   --clr-accent-drk: #00274e;
   --clr-btn-bg: rgba(255, 255, 255, 0.2);
+  --transparent-bg-drk: rgba(0, 1, 14, 1);
+  --transparent-bg-lgt: rgba(0, 1, 14, 0);
 }
 
 body {
@@ -60,7 +62,20 @@ body {
           box-shadow: 0 1em 1em var(--clr-dark-gray);
 }
 
-.content .nav {
+.unit-content {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(70%, var(--transparent-bg-lgt)), to(var(--transparent-bg-drk))), url("./images/main-bg.png");
+  background-image: linear-gradient(var(--transparent-bg-lgt) 70%, var(--transparent-bg-drk)), url("./images/main-bg.png");
+  width: 100%;
+  background-size: cover;
+  padding: var(--pd-section-sm);
+  margin: 0 auto;
+  width: 70vw;
+  height: 70vh;
+  -webkit-box-shadow: 0 1em 1em var(--clr-dark-gray);
+          box-shadow: 0 1em 1em var(--clr-dark-gray);
+}
+
+.nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,7 +88,7 @@ body {
   margin-bottom: var(--mgn-btm-lg);
 }
 
-.content .nav .nav-items {
+.nav .nav-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -85,11 +100,11 @@ body {
           align-items: center;
 }
 
-.content .nav .nav-items img {
+.nav .nav-items img {
   width: 20%;
 }
 
-.content .nav .nav-items a {
+.nav .nav-items a {
   padding: 0 1em;
 }
 
