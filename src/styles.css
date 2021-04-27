@@ -22,10 +22,11 @@
   --mgn-btm-none: 0;
   --mgn-btm-sm: 0.8em;
   --mgn-btm-md: 1.5em;
+  --pd-section: 10em;
   --clr-light: #fff;
   --clr-gray: #989898;
   --clr-light-gray: #d1d1d1;
-  --clr-dark: #444;
+  --clr-bg: #d8d8d8;
   --clr-accent: #e600c8;
   --clr-accent-secondary: #01dad2;
 }
@@ -36,12 +37,14 @@ body {
   letter-spacing: var(--ls-body);
   color: var(--clr-light);
   font-weight: var(--fw-light);
-  background-color: var(--clr-dark-bg);
+  background-color: var(--clr-bg);
+  padding: var(--pd-section);
 }
 
 .content {
   background-color: red;
-  width: 40vw;
-  height: 30vh;
+  margin: 0 auto;
+  width: 70vw;
+  height: 60vh;
 }
 /*# sourceMappingURL=styles.css.map */
