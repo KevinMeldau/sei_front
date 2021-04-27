@@ -1,7 +1,18 @@
 //File containing and exporting functions regarding content and how it is displayed
 
+export default {
+    getContent,
+    addContent,
+    editContent,
+    deleteContent,
+    filterContent,
+    favContent,
+    removeFavContent,
+}
+
 //function to get and store content locally
 function getContent() {
+    console.log("Hello World");
     //get content
     //store in array?
     //return array

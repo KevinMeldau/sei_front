@@ -1,7 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState, useEffect } from "react";
+import content from "./services/content";
 
 function App() {
+
+  useEffect(() => {
+    //call getContent
+    content.getContent();
+  }, [])
+
   return (
     <div className="App">
       <header className="App-header">
