@@ -54,4 +54,26 @@ body {
   -webkit-box-shadow: 0 1em 1em var(--clr-dark-gray);
           box-shadow: 0 1em 1em var(--clr-dark-gray);
 }
+
+.content .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content .nav .nav-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .nav .nav-items img {
+  width: 20%;
+}
 /*# sourceMappingURL=styles.css.map */

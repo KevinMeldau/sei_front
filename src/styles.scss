@@ -52,4 +52,15 @@ body {
   width: 70vw;
   height: 70vh;
   box-shadow: 0 1em 1em var(--clr-dark-gray);
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    .nav-items {
+      display: flex;
+      align-items: center;
+      img {
+        width: 20%;
+      }
+    }
+  }
 }
