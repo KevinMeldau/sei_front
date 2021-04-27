@@ -18,23 +18,30 @@
   --fs-h2: 1.3rem;
   --fs-h3: 1.1rem;
   --fs-body: 1rem;
+  --ls-body: 0.1em;
   --mgn-btm-none: 0;
   --mgn-btm-sm: 0.8em;
   --mgn-btm-md: 1.5em;
-  --fs-xl: 4rem;
   --clr-light: #fff;
-  --clr-light-gray: #d1d1d1;
   --clr-gray: #989898;
-  --clr-dark-gray: #444;
-  --clr-bg: #d8d8d8;
-  --clr-accent: #01dad2;
-  --clr-accent-secondary: #e600c8;
+  --clr-light-gray: #d1d1d1;
+  --clr-dark: #444;
+  --clr-accent: #e600c8;
+  --clr-accent-secondary: #01dad2;
 }
 
 body {
   font-family: var(--ff-body);
+  line-height: 1.6;
+  letter-spacing: var(--ls-body);
   color: var(--clr-light);
   font-weight: var(--fw-light);
-  background-color: var(--clr-bg);
+  background-color: var(--clr-dark-bg);
+}
+
+.content {
+  background-color: red;
+  width: 40vw;
+  height: 30vh;
 }
 /*# sourceMappingURL=styles.css.map */

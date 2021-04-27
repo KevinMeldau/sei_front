@@ -1,12 +1,11 @@
 // import { useState, useEffect } from "react";
-import Container from "./components/Container";
-
+import Content from "./components/Content";
 import "./styles.css";
 
 export default function App() {
   return (
     <div className="container">
-      <Container />
+      <Content />
     </div>
   );
 }
