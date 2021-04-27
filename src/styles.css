@@ -22,10 +22,12 @@
   --mgn-btm-none: 0;
   --mgn-btm-sm: 0.8em;
   --mgn-btm-md: 1.5em;
-  --pd-section: 10em;
+  --pd-section: 9em;
+  --pd-section-sm: 4em;
   --clr-light: #fff;
   --clr-gray: #989898;
   --clr-light-gray: #d1d1d1;
+  --clr-dark-gray: #808080;
   --clr-bg: #d8d8d8;
   --clr-accent: #e600c8;
   --clr-accent-secondary: #01dad2;
@@ -42,9 +44,14 @@ body {
 }
 
 .content {
-  background-color: red;
+  background-image: url("./images/main-bg.png");
+  width: 100%;
+  background-size: cover;
+  padding: var(--pd-section-sm);
   margin: 0 auto;
   width: 70vw;
-  height: 60vh;
+  height: 70vh;
+  -webkit-box-shadow: 0 1em 1em var(--clr-dark-gray);
+          box-shadow: 0 1em 1em var(--clr-dark-gray);
 }
 /*# sourceMappingURL=styles.css.map */
