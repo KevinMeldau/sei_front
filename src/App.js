@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import logo from './logo.svg';
 import './App.css';
 import { useState, useEffect } from "react";
@@ -10,24 +11,17 @@ function App() {
     content.getContent();
   }, [])
 
+=======
+// import { useState, useEffect } from "react";
+import Container from "./components/Container";
+
+import "./styles.css";
+
+export default function App() {
+>>>>>>> km/styling
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Container />
     </div>
   );
 }
-
-export default App;
