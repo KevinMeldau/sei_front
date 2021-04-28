@@ -1,15 +1,15 @@
 // import { useState, useEffect } from "react";
-import Content from "./components/Content";
-import Content_member from "./components/Content_member";
-import Unit_content_member from "./components/Unit_content_member";
+import Public_facing from "./components/Public_facing";
+import Member_content from "./components/Member_content";
+import Member_content_unit from "./components/Member_content_unit";
 import "./styles.css";
 
 export default function App() {
   return (
     <div className="container">
-      <Content />
-      <Content_member />
-      <Unit_content_member />
+      <Public_facing />
+      <Member_content />
+      <Member_content_unit />
     </div>
   );
 }
