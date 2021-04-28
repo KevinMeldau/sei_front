@@ -17,6 +17,7 @@
   --fs-h1: 3rem;
   --fs-h2: 1.3rem;
   --fs-h3: 1.1rem;
+  --fs-special: 4rem;
   --fs-body: 1rem;
   --ls-body: 0.1em;
   --mgn-btm-none: 0;
@@ -173,6 +174,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 100px;
+  margin-bottom: var(--mgn-btm-md);
 }
 
 .tech-icons-container .unit-heading {
@@ -195,5 +197,22 @@ button {
 .tech-icons-container .tech-icons img {
   width: 10%;
   margin: 0 1.5em;
+}
+
+.lesson-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 100px;
+}
+
+.lesson-description .current-lesson {
+  font-size: var(--fs-special);
+  font-weight: var(--fw-bold);
+  color: var(--clr-accent-secondary);
+  margin-right: 20px;
 }
 /*# sourceMappingURL=styles.css.map */
