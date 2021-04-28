@@ -35,9 +35,12 @@ export default function Unit_content_member() {
         <p className="current-lesson">01</p>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.
         </p>
       </div>
+      <hr />
     </div>
   );
 }

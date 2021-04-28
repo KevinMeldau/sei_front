@@ -167,9 +167,6 @@ button {
 }
 
 .tech-icons-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -185,13 +182,17 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-width: 20vw;
+  margin-bottom: var(--mgn-btm-lg);
 }
 
 .tech-icons-container .tech-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: var(--mgn-btm-lg);
 }
 
 .tech-icons-container .tech-icons img {
@@ -203,9 +204,6 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding: 0 100px;
 }
 
@@ -214,5 +212,11 @@ button {
   font-weight: var(--fw-bold);
   color: var(--clr-accent-secondary);
   margin-right: 20px;
+  margin-bottom: var(--mgn-btm-sm);
+}
+
+hr {
+  border: 0.25px solid var(--clr-accent);
+  opacity: 0.7;
 }
 /*# sourceMappingURL=styles.css.map */
