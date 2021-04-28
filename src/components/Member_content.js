@@ -7,9 +7,10 @@ export default function Content_member() {
       <div className="nav">
         <div className="nav-items">
           <img src={companyLogo} alt="Logo image" />
-          <a href="#">About</a>
-          <a href="#">Stories</a>
-          <a href="#">Pricing</a>
+          <a href="#">Unit 1</a>
+          <a href="#">Unit 2</a>
+          <a href="#">Unit 3</a>
+          <a href="#">Unit 4</a>
         </div>
         <div className="login-container">
           <button>LOGIN</button>
