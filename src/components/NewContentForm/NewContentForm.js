@@ -1,7 +1,10 @@
 const NewContentForm = (props) => {
     return (
         <div>
-            <form id="newContent" onSubmit={props.func()}>
+            <form id="newContent" name="newContent"onSubmit={(e) => {
+                e.preventDefault();
+                props.func();
+            }}>
                 <input type="text" placeholder="Title" name="title" id=""/>
                 <input type="text" placeholder="Subject" name="subject" id=""/>
                 <input type="text" placeholder="Unit" name="unit" id=""/>
