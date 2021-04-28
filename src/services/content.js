@@ -24,9 +24,13 @@ async function getContent() {
 
 //function to add content
 function addContent(e, form) {
-    //show form for adding content
     //get form content
-    //send form content to back end
+    const formData = document.getElementById("newContent");
+    console.log(formData);
+
+    //convert form to JSON
+
+    //send JSON to back end
 }
 
 //function to update content
