@@ -31,6 +31,16 @@ export default function Unit_content_member() {
           <img src={sassLogo} className="sass-logo" alt="Sass logo" />
         </div>
       </div>
+      <div className="lesson-description">
+        <p className="current-lesson">01</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <hr />
     </div>
   );
 }
