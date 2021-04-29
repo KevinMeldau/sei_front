@@ -1,10 +1,17 @@
 import "../styles.css";
-import Nav from "../components/Nav";
+import companyLogo from "../images/sei_logo.png";
 
 export default function Content_member() {
   return (
     <div className="content">
-      <Nav />
+      <div className="nav">
+        <div className="nav-items">
+          <img src={companyLogo} alt="Company logo" />
+        </div>
+        <div className="login-container">
+          <button>LOG OUT</button>
+        </div>
+      </div>
       <div className="heading">
         <h1>
           A great <br />

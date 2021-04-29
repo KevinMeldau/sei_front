@@ -7,18 +7,6 @@ export default function Content() {
       <div className="nav">
         <div className="nav-items">
           <img src={companyLogo} alt="Company logo" />
-          <a href="#" className="hide">
-            Unit 1
-          </a>
-          <a href="#" className="hide">
-            Unit 2
-          </a>
-          <a href="#" className="hide">
-            Unit 3
-          </a>
-          <a href="#" className="hide">
-            Unit 4
-          </a>
         </div>
         <div className="login-container">
           <button>LOGIN</button>
