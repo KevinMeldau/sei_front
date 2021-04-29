@@ -1,6 +1,6 @@
 # sei resources manager  🗄
 
-ATTN: All sei-perseverance student. We have a treat for you. Our app allows user allow you to login and find all unit video recording and lessons with a click of a button. 
+ATTN: All sei-perseverance student. We have a treat for you. Our app allows users to login and find all unit video recording and lessons with a click of a button. 
 
 ## Technologies Used ⚙️
 
