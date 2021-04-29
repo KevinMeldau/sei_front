@@ -232,5 +232,20 @@ hr {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 0 100px;
+}
+
+.form button {
+  width: 200px;
+}
+
+input {
+  border: 1px solid var(--clr-light);
+  color: var(--clr-light);
+  background-color: var(--transparent-bg-lgt);
+  padding: 0.8em 2em;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: var(--mgn-btm-sm);
 }
 /*# sourceMappingURL=styles.css.map */
