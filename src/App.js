@@ -1,4 +1,4 @@
-// import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Public_facing from "./components/Public_facing";
 import Form from "./components/Form";
 import Member_content from "./components/Member_content";
@@ -10,6 +10,18 @@ import "./styles.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 export default function App() {
+  const [lessonsState, setLessonsState] = useState({ notices: []});
+
+  useEffect(() => {
+    function getLessons() {
+      fetch("http://localhost:3000/lessons")
+      .then(res => res.json())
+      .then(data => console.log("data: ", data))
+      .catch(error => console.error(error));
+    }
+
+    getLessons();
+  });
   return (
     <Router>
       <div className="container">
