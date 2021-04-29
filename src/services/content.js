@@ -11,22 +11,38 @@ export default {
 }
 
 //function to get and store content locally
-function getContent() {
+async function getContent() {
     console.log("Hello World");
+
+    const resources = [];
     //get content
+    
+
     //store in array?
-    //return array
+    return resources
 }
 
 //function to add content
 function addContent() {
-    //show form for adding content
     //get form content
-    //send form content to back end
+    //convert form to object
+    const formData = {
+        title: document.forms["newContent"].elements["title"].value,
+        subject: document.forms["newContent"].elements["subject"].value,
+        unit: document.forms["newContent"].elements["unit"].value,
+        videoLink: document.forms["newContent"].elements["videoLink"].value,
+        markdownLink: document.forms["newContent"].elements["markdownLink"].value,
+        resourceLink: document.forms["newContent"].elements["resourceLinks"].value,
+        tags: document.forms["newContent"].elements["tags"].value
+    }
+    console.log(formData);
+    
+
+    //send JSON to back end
 }
 
 //function to update content
-function editContent() {
+function editContent(e, contentId) {
     //get target form content
     //create form with content filled in
     //setState to update content
@@ -34,19 +50,20 @@ function editContent() {
 }
 
 //function to delete content
-function deleteContent() {
+function deleteContent(e, contentId) {
     //get target content
     //send delete request to backend
 }
 
 //function to update state to only show content with certain tags
-function filterContent(/*tags*/) {
+function filterContent(e, tags) {
+    e.preventDefault();
     //take tags
     //set state to only show content marked with tags
 }
 
 //function to favorite content
-function favContent() {
+function favContent(e, contentId) {
     //get user
     //get target content
     //post target content to user favorites list
@@ -54,7 +71,7 @@ function favContent() {
 }
 
 //function to remove favorite content
-function removeFavContent() {
+function removeFavContent(e, user, contentId) {
     //get user
     //get target
     //post target content to remove from user favorites list
