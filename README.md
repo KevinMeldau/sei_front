@@ -6,7 +6,7 @@ You will need to login. Then click the unit your interested in, and scroll until
 
 ## Technologies Used ⚙️
 
-- CSS3
+<!-- - CSS3 -->
 - HTML
 - JS
 - Ruby
