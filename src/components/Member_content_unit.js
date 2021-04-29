@@ -1,5 +1,5 @@
 import "../styles.css";
-import companyLogo from "../images/sei_logo.png";
+import Nav from "../components/Nav";
 import htmlLogo from "../images/html5_logo.svg";
 import cssLogo from "../images/css3_logo.svg";
 import javascriptLogo from "../images/javascript_logo.svg";
@@ -8,18 +8,7 @@ import sassLogo from "../images/sass_logo.svg";
 export default function Unit_content_member() {
   return (
     <div className="unit-content">
-      <div className="nav">
-        <div className="nav-items">
-          <img src={companyLogo} alt="Company logo" />
-          <a href="#">Unit 1</a>
-          <a href="#">Unit 2</a>
-          <a href="#">Unit 3</a>
-          <a href="#">Unit 4</a>
-        </div>
-        <div className="login-container">
-          <button>LOGIN</button>
-        </div>
-      </div>
+      <Nav />
       <div className="tech-icons-container">
         <div className="unit-heading">
           <h2>Heading</h2>
