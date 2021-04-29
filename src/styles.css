@@ -97,7 +97,6 @@ a {
   padding: var(--pd-section-sm);
   margin: 0 auto;
   width: 70vw;
-  height: 70vh;
   -webkit-box-shadow: 0 1em 1em var(--clr-dark-gray);
           box-shadow: 0 1em 1em var(--clr-dark-gray);
 }

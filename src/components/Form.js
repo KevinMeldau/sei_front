@@ -1,9 +1,5 @@
 import "../styles.css";
 import Nav from "./Nav";
-import htmlLogo from "../images/html5_logo.svg";
-import cssLogo from "../images/css3_logo.svg";
-import javascriptLogo from "../images/javascript_logo.svg";
-import sassLogo from "../images/sass_logo.svg";
 
 export default function Form() {
   return (

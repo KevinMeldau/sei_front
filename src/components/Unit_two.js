@@ -5,7 +5,7 @@ import cssLogo from "../images/css3_logo.svg";
 import javascriptLogo from "../images/javascript_logo.svg";
 import sassLogo from "../images/sass_logo.svg";
 
-export default function Unit_one() {
+export default function Unit_two() {
   return (
     <div className="unit-content">
       <Nav />
@@ -22,7 +22,7 @@ export default function Unit_one() {
         </div>
       </div>
       <div className="lesson-description">
-        <p className="current-lesson">01</p>
+        <p className="current-lesson">02</p>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
