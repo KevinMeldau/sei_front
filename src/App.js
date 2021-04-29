@@ -1,15 +1,20 @@
 // import { useState, useEffect } from "react";
 import Public_facing from "./components/Public_facing";
 import Member_content from "./components/Member_content";
-import Member_content_unit from "./components/Member_content_unit";
+import Unit_one from "./components/Unit_one";
 import "./styles.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 export default function App() {
   return (
-    <div className="container">
-      <Public_facing />
-      <Member_content />
-      <Member_content_unit />
-    </div>
+    <Router>
+      <div className="container">
+        <Switch>
+          <Route path="/member" component={Member_content} />
+          <Route path="/unit" component={Unit_one} />
+          <Route path="/" component={Public_facing} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
