@@ -6,7 +6,7 @@ You will need to login. Then click the unit your interested in, and scroll until
 
 ## Technologies Used ⚙️
 
-<!-- - CSS3 -->
+- CSS3
 - HTML
 - JS
 - Ruby
@@ -16,6 +16,9 @@ You will need to login. Then click the unit your interested in, and scroll until
 - Heroku (Backend deployment)
 
 ## Screenshots 📸
+![screenshot 1](./src/images/screenshot1.png)
+
+![screenshot 2](./src/images/screenshot2.png)
 
 ![wireframe 1](./src/images/wireframe1.png)
 
