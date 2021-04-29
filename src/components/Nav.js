@@ -10,6 +10,7 @@ export default function Nav() {
         <a href="#">Unit 2</a>
         <a href="#">Unit 3</a>
         <a href="#">Unit 4</a>
+        {/* <p>TEST</p> */}
       </div>
       <div className="login-container">
         <button>LOGIN</button>
