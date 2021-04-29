@@ -1,6 +1,8 @@
-# sei resources manager  🗄
+# Sei Resource Manager  🗄
 
-ATTN: All sei-perseverance student. We have a treat for you. Our app allows users to login and find all unit video recording and lessons with a click of a button. 
+ATTN: All sei-perseverance students! We have a treat for you! Need the video and markdown for Unit 2's "Intro to Node.js" or Unit 1's "Intro to the DOM" video and markdown in a hurry? Your now able to find all unit video recordings and lessons with a click of a button. 
+ 
+You will need to login. Then click the unit your interested in, and scroll untill you find the vid and lesson you want. Enjoy!
 
 ## Technologies Used ⚙️
 
