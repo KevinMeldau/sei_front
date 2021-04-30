@@ -56,10 +56,18 @@ function deleteContent(e, contentId) {
 }
 
 //function to update state to only show content with certain tags
-function filterContent(e, tags) {
-    e.preventDefault();
-    //take tags
-    //set state to only show content marked with tags
+//pass array of all lessons and Unit Number
+function filterContent(lessons, unitNum) {
+    //create new array for content pertaining to specific unit
+    const unitContent = [];
+
+    lessons.forEach(lesson => {
+        if(lesson.unit === unitNum) {
+            unitContent.push(lesson);
+        }
+    });
+    
+    return unitContent;
 }
 
 //function to favorite content

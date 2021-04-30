@@ -4,8 +4,13 @@ import htmlLogo from "../images/html5_logo.svg";
 import cssLogo from "../images/css3_logo.svg";
 import javascriptLogo from "../images/javascript_logo.svg";
 import sassLogo from "../images/sass_logo.svg";
+import content from "../services/content";
 
-export default function Unit_two() {
+export default function Unit_two(props) {
+
+  const unitContent = content.filterContent(props.lessons, "2");
+  console.log(unitContent);
+
   return (
     <div className="unit-content">
       <Nav />
