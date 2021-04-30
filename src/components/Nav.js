@@ -17,8 +17,8 @@ export default function Nav() {
         <Link to="/form">
           <button type="button">Upload</button>
         </Link>
-        <Link to="/unit_one">
-          <button type="button">Login</button>
+        <Link to="/">
+          <button type="button">Log Out</button>
         </Link>
       </div>
     </div>

@@ -10,14 +10,14 @@ import "./styles.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 export default function App() {
-  const [lessonsState, setLessonsState] = useState({ notices: []});
+  const [lessonsState, setLessonsState] = useState({ notices: [] });
 
   useEffect(() => {
     function getLessons() {
       fetch("http://localhost:3000/lessons")
-      .then(res => res.json())
-      .then(data => console.log("data: ", data))
-      .catch(error => console.error(error));
+        .then((res) => res.json())
+        .then((data) => console.log("data: ", data))
+        .catch((error) => console.error(error));
     }
 
     getLessons();
@@ -26,7 +26,7 @@ export default function App() {
     <Router>
       <div className="container">
         <Switch>
-          <Route path="/member" component={Member_content} />
+          <Route path="/member_content" component={Member_content} />
           <Route path="/form" component={Form} />
           <Route path="/unit_one" component={Unit_one} />
           <Route path="/unit_two" component={Unit_two} />

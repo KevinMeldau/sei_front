@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles.css";
 import companyLogo from "../images/sei_logo.png";
 
@@ -9,7 +10,9 @@ export default function Content_member() {
           <img src={companyLogo} alt="Company logo" />
         </div>
         <div className="login-container">
-          <button>LOG OUT</button>
+          <Link to="/">
+            <button type="button">Log Out</button>
+          </Link>
         </div>
       </div>
       <div className="heading">
@@ -24,10 +27,18 @@ export default function Content_member() {
         </p>
       </div>
       <div className="unit-btn-container">
-        <button>Unit 1</button>
-        <button>Unit 2</button>
-        <button>Unit 3</button>
-        <button>unit 4</button>
+        <Link to="/unit_one">
+          <button type="button">Unit 1</button>
+        </Link>
+        <Link to="/unit_two">
+          <button type="button">Unit 2</button>
+        </Link>
+        <Link to="/unit_three">
+          <button type="button">Unit 3</button>
+        </Link>
+        <Link to="/unit_four">
+          <button type="button">Unit 4</button>
+        </Link>
       </div>
     </div>
   );
