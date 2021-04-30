@@ -1,9 +1,9 @@
 import "../styles.css";
 import Nav from "./Nav";
-import htmlLogo from "../images/html5_logo.svg";
-import cssLogo from "../images/css3_logo.svg";
-import javascriptLogo from "../images/javascript_logo.svg";
-import sassLogo from "../images/sass_logo.svg";
+import nodejsLogo from "../images/nodejs_logo.svg";
+import mongodbLogo from "../images/mongodb_logo.svg";
+import reactLogo from "../images/react_logo.svg";
+import expressLogo from "../images/express_logo.svg";
 import content from "../services/content";
 
 export default function Unit_three(props) {
@@ -20,10 +20,10 @@ export default function Unit_three(props) {
           <h3>This is a great place for a sub-head</h3>
         </div>
         <div className="tech-icons">
-          <img src={htmlLogo} className="html-logo" alt="HTML logo" />
-          <img src={cssLogo} className="css-logo" alt="CSS logo" />
-          <img src={javascriptLogo} className="js-logo" alt="Javascript logo" />
-          <img src={sassLogo} className="sass-logo" alt="Sass logo" />
+          <img src={nodejsLogo} className="nodejs-logo" alt="Nodejs logo" />
+          <img src={mongodbLogo} className="mongodb-logo" alt="Mongodb logo" />
+          <img src={reactLogo} className="react-logo" alt="React logo" />
+          <img src={expressLogo} className="express-logo" alt="Express logo" />
         </div>
       </div>
       <div className="lesson-description">
