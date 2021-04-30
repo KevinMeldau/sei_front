@@ -11,13 +11,22 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 export default function App() {
   const [lessonsState, setLessonsState] = useState({ notices: []});
+  
+  //state for holding lessons
+  const [content, setContent] = useState([]);
 
   useEffect(() => {
-    function getLessons() {
-      fetch("http://localhost:3000/lessons")
-      .then(res => res.json())
-      .then(data => console.log("data: ", data))
-      .catch(error => console.error(error));
+    async function getLessons() {
+      try {
+        //assigns json data to variable
+        let lessons = await fetch("http://localhost:3000/lessons")
+        .then(res => res.json());
+        
+        //sets content state to variable lessons
+        setContent(lessons);
+      } catch(err) {
+        console.log(err)
+      }
     }
 
     getLessons();
@@ -28,10 +37,10 @@ export default function App() {
         <Switch>
           <Route path="/member" component={Member_content} />
           <Route path="/form" component={Form} />
-          <Route path="/unit_one" component={Unit_one} />
-          <Route path="/unit_two" component={Unit_two} />
-          <Route path="/unit_three" component={Unit_three} />
-          <Route path="/unit_four" component={Unit_four} />
+          <Route path="/unit_one" component={Unit_one} lessons={content} />
+          <Route path="/unit_two" component={Unit_two} lessons={content}/>
+          <Route path="/unit_three" component={Unit_three} lessons={content}/>
+          <Route path="/unit_four" component={Unit_four} lessons={content}/>
           <Route path="/" component={Public_facing} />
         </Switch>
       </div>
