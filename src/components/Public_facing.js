@@ -7,7 +7,9 @@ export default function Content() {
     <div className="content">
       <div className="nav">
         <div className="nav-items">
-          <img src={companyLogo} alt="Company logo" />
+          <Link to="/">
+            <img src={companyLogo} alt="Logo image" />
+          </Link>
         </div>
         <div className="login-container">
           <Link to="/member_content">
