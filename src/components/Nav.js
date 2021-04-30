@@ -14,7 +14,12 @@ export default function Nav() {
         <Link to="/unit_four">Unit 4</Link>
       </div>
       <div className="login-container">
-        <button>LOGIN</button>
+        <Link to="/form">
+          <button type="button">Upload</button>
+        </Link>
+        <Link to="/">
+          <button type="button">Log Out</button>
+        </Link>
       </div>
     </div>
   );

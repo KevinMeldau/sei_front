@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles.css";
 import companyLogo from "../images/sei_logo.png";
 
@@ -9,7 +10,9 @@ export default function Content() {
           <img src={companyLogo} alt="Company logo" />
         </div>
         <div className="login-container">
-          <button>LOGIN</button>
+          <Link to="/member_content">
+            <button type="button">Login</button>
+          </Link>
         </div>
       </div>
       <div className="heading">

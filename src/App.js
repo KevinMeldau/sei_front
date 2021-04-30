@@ -10,6 +10,7 @@ import "./styles.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 export default function App() {
+
   //state for holding lessons
   const [content, setContent] = useState([]);
 
@@ -26,6 +27,7 @@ export default function App() {
       } catch(err) {
         console.log(err)
       }
+
     }
 
     getLessons();
@@ -34,7 +36,7 @@ export default function App() {
     <Router>
       <div className="container">
         <Switch>
-          <Route path="/member" component={Member_content} />
+          <Route path="/member_content" component={Member_content} />
           <Route path="/form" component={Form} />
           <Route path="/unit_one" component={() => <Unit_one lessons={content} />} />
           <Route path="/unit_two" component={() => <Unit_two lessons={content} />} />
