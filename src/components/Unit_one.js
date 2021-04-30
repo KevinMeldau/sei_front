@@ -7,7 +7,6 @@ import sassLogo from "../images/sass_logo.svg";
 import content from "../services/content";
 
 export default function Unit_one(props) {
-  
   const unitContent = content.filterContent(props.lessons, "1");
   console.log(unitContent);
 
@@ -16,9 +15,18 @@ export default function Unit_one(props) {
       <Nav />
       <div className="tech-icons-container">
         <div className="unit-heading">
-          <h2>Heading</h2>
-          <h3>This is a great place for a sub-head</h3>
+          <h2>
+            {unitContent.map((unitContent) => (
+              <div>{unitContent.title}</div>
+            ))}
+          </h2>
+          <h3>
+            {unitContent.map((unitContent) => (
+              <div>{unitContent.subject}</div>
+            ))}
+          </h3>
         </div>
+
         <div className="tech-icons">
           <img src={htmlLogo} className="html-logo" alt="HTML logo" />
           <img src={cssLogo} className="css-logo" alt="CSS logo" />
@@ -27,11 +35,32 @@ export default function Unit_one(props) {
         </div>
       </div>
       <div className="lesson-description">
-        <p className="current-lesson">01</p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+        <div className="current-lesson">
+          {unitContent.map((unitContent) => (
+            <div>{unitContent.unit}</div>
+          ))}
+        </div>
+        
+        <div>
+          {unitContent.map((unitContent) => (
+            <div>{unitContent.videoLink}</div>
+          ))}
+        </div>
+        <div>
+        {unitContent.map((unitContent) => (
+            <div>{unitContent.markdownLink}</div>
+          ))}
+        </div>
+        <div>
+        {unitContent.map((unitContent) => (
+            <div>{unitContent.resourceLink}</div>
+          ))}
+        </div>
+        <div>
+          {unitContent.map((unitContent) => (
+            <div>{unitContent.tags}</div>
+          ))}
+        </div>
       </div>
       <hr />
     </div>
