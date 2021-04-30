@@ -127,6 +127,7 @@ button {
   background-color: var(--clr-accent-drk);
   padding: 0.8em 2em;
   border-radius: 20px;
+  margin: 0 1em;
   cursor: pointer;
   text-transform: uppercase;
 }
@@ -194,6 +195,7 @@ hr {
   padding: 0 100px;
   button {
     width: 200px;
+    margin: 0;
   }
 }
 

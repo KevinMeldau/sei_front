@@ -14,6 +14,7 @@ export default function Nav() {
         <Link to="/unit_four">Unit 4</Link>
       </div>
       <div className="login-container">
+        <button>UPLOAD</button>
         <button>LOGIN</button>
       </div>
     </div>
