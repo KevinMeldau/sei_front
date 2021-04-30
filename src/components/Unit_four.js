@@ -6,7 +6,7 @@ import javascriptLogo from "../images/javascript_logo.svg";
 import sassLogo from "../images/sass_logo.svg";
 import content from "../services/content";
 
-export default function Unit_four() {
+export default function Unit_four(props) {
 
   const unitContent = content.filterContent(props.lessons, "4");
   console.log(unitContent);

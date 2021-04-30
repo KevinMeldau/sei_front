@@ -37,9 +37,9 @@ export default function App() {
           <Route path="/member" component={Member_content} />
           <Route path="/form" component={Form} />
           <Route path="/unit_one" component={() => <Unit_one lessons={content} />} />
-          <Route path="/unit_two" component={() => <Unit_two lessons={content}/>} />
-          <Route path="/unit_three" component={Unit_three} />
-          <Route path="/unit_four" component={Unit_four} />
+          <Route path="/unit_two" component={() => <Unit_two lessons={content} />} />
+          <Route path="/unit_three" component={() => <Unit_three lessons={content} />} />
+          <Route path="/unit_four" component={() => <Unit_four lessons={content} />} />
           <Route path="/" component={Public_facing} />
         </Switch>
       </div>
