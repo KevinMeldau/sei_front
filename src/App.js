@@ -10,7 +10,6 @@ import "./styles.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 export default function App() {
-
   //state for holding lessons
   const [content, setContent] = useState([]);
 
@@ -18,16 +17,16 @@ export default function App() {
     async function getLessons() {
       try {
         //assigns json data to variable
-        let lessons = await fetch("http://localhost:3000/lessons")
-        .then(res => res.json());
-        
-        //sets content state to variable lessons
-        console.log
-        setContent(lessons);
-      } catch(err) {
-        console.log(err)
-      }
+        let lessons = await fetch("http://localhost:3000/lessons").then((res) =>
+          res.json()
+        );
 
+        //sets content state to variable lessons
+        console.log;
+        setContent(lessons);
+      } catch (err) {
+        console.log(err);
+      }
     }
 
     getLessons();
@@ -38,10 +37,26 @@ export default function App() {
         <Switch>
           <Route path="/member_content" component={Member_content} />
           <Route path="/form" component={Form} />
-          <Route path="/unit_one" component={() => <Unit_one lessons={content} />} />
-          <Route path="/unit_two" component={() => <Unit_two lessons={content} />} />
-          <Route path="/unit_three" component={() => <Unit_three lessons={content} />} />
-          <Route path="/unit_four" component={() => <Unit_four lessons={content} />} />
+          <Route
+            path="/unit_one"
+            component={() => <Unit_one lessons={content} />}
+          />
+          <Route
+            path="/unit_two"
+            component={() => <Unit_two lessons={content} />}
+          />
+          <Route
+            path="/unit_three"
+            component={() => <Unit_three lessons={content} />}
+          />
+          <Route
+            path="/unit_four"
+            component={() => <Unit_four lessons={content} />}
+          />
+          <Route
+            path="/external_resources"
+            component={() => <Unit_four lessons={content} />}
+          />
           <Route path="/" component={Public_facing} />
         </Switch>
       </div>

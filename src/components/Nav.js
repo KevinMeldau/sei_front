@@ -14,6 +14,7 @@ export default function Nav() {
         <Link to="/unit_two">Unit 2</Link>
         <Link to="/unit_three">Unit 3</Link>
         <Link to="/unit_four">Unit 4</Link>
+        <Link to="/external_Resources">External Resources</Link>
       </div>
       <div className="login-container">
         <Link to="/form">
