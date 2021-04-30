@@ -11,9 +11,14 @@ export default function Nav() {
         <a href="#">Unit 3</a>
         <a href="#">Unit 4</a>
       </div>
-      <div className="login-container">
-        <button>LOGIN</button>
+      
+      <div className="upload-container">
+      <button>Upload</button>
       </div>
+      <div className="login-container">
+      <button>LOGIN</button>
+      </div>
+      
     </div>
   );
 }
