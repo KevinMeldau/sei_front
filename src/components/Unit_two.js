@@ -3,7 +3,7 @@ import Nav from "./Nav";
 import expressLogo from "../images/express_logo.svg";
 import nodejsLogo from "../images/nodejs_logo.svg";
 import mongodbLogo from "../images/mongodb_logo.svg";
-import sassLogo from "../images/sass_logo.svg";
+import herokuLogo from "../images/heroku.svg";
 import content from "../services/content";
 
 export default function Unit_two(props) {
@@ -23,7 +23,7 @@ export default function Unit_two(props) {
           <img src={expressLogo} className="express-logo" alt="Express logo" />
           <img src={nodejsLogo} className="nodejs-logo" alt="NODEJS logo" />
           <img src={mongodbLogo} className="mongodb-logo" alt="Mongodb logo" />
-          {/* <img src={sassLogo} className="sass-logo" alt="Sass logo" /> */}
+          <img src={herokuLogo} className="heroku-logo" alt="heroku logo" />
         </div>
       </div>
       <div className="lesson-description">
