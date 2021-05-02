@@ -17,7 +17,10 @@ export default function Nav() {
         <Link to="/external_Resources">External Resources</Link>
       </div>
       <div className="login-container">
-        <Link to="/form">
+        <Link to={{
+                  pathname: "/form",
+                  state: {  }
+                }}>
           <button type="button">Upload</button>
         </Link>
         <Link to="/">

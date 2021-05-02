@@ -38,7 +38,7 @@ function addContent() {
     // console.log(formData);
     
 
-    fetch("https://sei-resource-manager.herokuapp.com/lessons",
+    fetch("http://localhost:3000/lessons",
         {method: "POST",
         mode: "cors",
         headers: {"Content-type": "Application/json"},
@@ -70,7 +70,7 @@ function deleteContent(content) {
     //get target content
     console.log(content);
     //send delete request to backend
-    fetch(`https://sei-resource-manager.herokuapp.com/lessons/${content.id}`, {
+    fetch(`http://localhost:3000/lessons/${content.id}`, {
         method: "DELETE",
         mode: "cors",
         headers: {"Content-type": "Application/json"},

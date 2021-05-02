@@ -34,7 +34,7 @@ export default function App() {
 
     async function getLessons() {
       try {
-        let lessons = await fetch("https://sei-resource-manager.herokuapp.com/lessons").then((res) =>
+        let lessons = await fetch("http://localhost:3000/lessons").then((res) =>
           res.json());
           setState((prevState) =>({
             ...prevState,
