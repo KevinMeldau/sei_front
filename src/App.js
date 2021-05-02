@@ -1,17 +1,27 @@
 import { useState, useEffect } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import {login, logout, auth } from "./services/firebase";
+
+import "./styles.css";
+
 import Public_facing from "./components/Public_facing";
 import Form from "./components/Form";
 import Member_content from "./components/Member_content";
+import Header from "./components/Header"
 import Unit_one from "./components/Unit_one";
 import Unit_two from "./components/Unit_two";
 import Unit_three from "./components/Unit_three";
 import Unit_four from "./components/Unit_four";
-import "./styles.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 
 export default function App() {
   //state for holding lessons
   const [content, setContent] = useState([]);
+  
+  const [state, setState] = useState({
+    user:null,
+  });
 
   useEffect(() => {
     async function getLessons() {
@@ -33,6 +43,10 @@ export default function App() {
   }, []);
   return (
     <Router>
+      <div>
+        <Header />
+      </div>
+    <main>
       <div className="container">
         <Switch>
           <Route path="/member_content" component={Member_content} />
@@ -60,6 +74,7 @@ export default function App() {
           <Route path="/" component={Public_facing} />
         </Switch>
       </div>
+    </main>
     </Router>
   );
 }
