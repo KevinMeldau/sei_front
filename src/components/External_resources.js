@@ -5,6 +5,7 @@ import cssLogo from "../images/css3_logo.svg";
 import javascriptLogo from "../images/javascript_logo.svg";
 import sassLogo from "../images/sass_logo.svg";
 import content from "../services/content";
+import { Link } from "react-router-dom";
 
 export default function Unit_four(props) {
   const unitContent = content.filterContent(props.lessons, "5");
@@ -19,9 +20,14 @@ export default function Unit_four(props) {
             {unitContent.map((unitContent) => (
               <div>
                 {unitContent.title}
-                <button onClick={(e) => {
-                  content.editContent(unitContent);
+                <Link to={{
+                  pathname: "/form",
+                  state: { content: unitContent }
+                }}>
+                  <button type="button" onClick={(e) => {
+                  content.deleteContent(unitContent);
                 }}>Edit</button>
+                </Link>
                 <button onClick={(e) => {
                   content.deleteContent(unitContent);
                 }}>Delete</button>
