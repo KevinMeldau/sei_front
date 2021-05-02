@@ -24,14 +24,21 @@ export default function App() {
   });
 
   useEffect(() => {
+    auth.onAuthStateChanged(user => {
+        setState(prevState => ({
+          ...prevState,
+          user,
+        }));
+    });
+
     async function getLessons() {
       try {
-        //assigns json data to variable
         let lessons = await fetch("http://localhost:3000/lessons").then((res) =>
-          res.json()
-        );
+          res.json());
+          setState((prevState) =>({
+            ...prevState,
+          }));
 
-        //sets content state to variable lessons
         console.log;
         setContent(lessons);
       } catch (err) {
