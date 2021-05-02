@@ -12,7 +12,6 @@ export default function Form() {
             }}>
         <input type="text" placeholder="Title" name="title" id="" />
         <input type="text" placeholder="Subject" name="subject" id="" />
-        <input type="text" placeholder="Unit" name="unit" id="" />
         <input type="text" placeholder="Video Link" name="videoLink" id="" />
         <input
           type="text"
