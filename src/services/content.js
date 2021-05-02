@@ -35,9 +35,24 @@ function addContent() {
         resourceLink: document.forms["newContent"].elements["resourceLinks"].value,
         tags: document.forms["newContent"].elements["tags"].value
     }
-    console.log(formData);
+    // console.log(formData);
     
 
+    fetch("http://localhost:3000/lessons",
+        {method: "POST",
+        mode: "cors",
+        headers: {"Content-type": "Application/json"},
+        body: JSON.stringify({
+            title: document.forms["newContent"].elements["title"].value,
+            subject: document.forms["newContent"].elements["subject"].value,
+            unit: document.forms["newContent"].elements["unit"].value,
+            videoLink: document.forms["newContent"].elements["videoLink"].value,
+            markdownLink: document.forms["newContent"].elements["markdownLink"].value,
+            resourceLink: document.forms["newContent"].elements["resourceLinks"].value,
+            tags: document.forms["newContent"].elements["tags"].value
+        })
+    }); 
+    
     //send JSON to back end
 }
 
