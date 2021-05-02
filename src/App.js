@@ -13,6 +13,7 @@ import Unit_one from "./components/Unit_one";
 import Unit_two from "./components/Unit_two";
 import Unit_three from "./components/Unit_three";
 import Unit_four from "./components/Unit_four";
+import External_resources from "./components/External_resources";
 
 
 export default function App() {
@@ -76,7 +77,7 @@ export default function App() {
           />
           <Route
             path="/external_resources"
-            component={() => <Unit_four lessons={content} />}
+            component={() => <External_resources lessons={content} />}
           />
           <Route path="/" component={Public_facing} />
         </Switch>

@@ -29,20 +29,36 @@ function addContent() {
     const formData = {
         title: document.forms["newContent"].elements["title"].value,
         subject: document.forms["newContent"].elements["subject"].value,
-        unit: document.forms["newContent"].elements["unit"].value,
+        unit: "5",
         videoLink: document.forms["newContent"].elements["videoLink"].value,
         markdownLink: document.forms["newContent"].elements["markdownLink"].value,
         resourceLink: document.forms["newContent"].elements["resourceLinks"].value,
         tags: document.forms["newContent"].elements["tags"].value
     }
-    console.log(formData);
+    // console.log(formData);
     
 
+    fetch("http://localhost:3000/lessons",
+        {method: "POST",
+        mode: "cors",
+        headers: {"Content-type": "Application/json"},
+        body: JSON.stringify({
+            title: document.forms["newContent"].elements["title"].value,
+            subject: document.forms["newContent"].elements["subject"].value,
+            unit: "5",
+            videoLink: document.forms["newContent"].elements["videoLink"].value,
+            markdownLink: document.forms["newContent"].elements["markdownLink"].value,
+            resourceLinks: document.forms["newContent"].elements["resourceLinks"].value,
+            tags: document.forms["newContent"].elements["tags"].value
+        })
+    }); 
+    
     //send JSON to back end
 }
 
 //function to update content
-function editContent(e, contentId) {
+function editContent(content) {
+    console.log(content);
     //get target form content
     //create form with content filled in
     //setState to update content
@@ -50,9 +66,25 @@ function editContent(e, contentId) {
 }
 
 //function to delete content
-function deleteContent(e, contentId) {
+function deleteContent(content) {
     //get target content
+    console.log(content);
     //send delete request to backend
+    fetch(`http://localhost:3000/lessons/${content.id}`, {
+        method: "DELETE",
+        mode: "cors",
+        headers: {"Content-type": "Application/json"},
+        body: JSON.stringify({
+            id: content.id,
+            title: content.title,
+            subject: content.subject,
+            unit: content.unit,
+            videoLink: content.videoLink,
+            markdownLink: content.markdownLink,
+            resourceLinks: content.resourceLinks,
+            tags: content.tags
+        })
+    })
 }
 
 //function to update state to only show content with certain tags

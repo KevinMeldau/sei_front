@@ -1,9 +1,9 @@
 import "../styles.css";
 import Nav from "./Nav";
-import nodejsLogo from "../images/nodejs_logo.svg";
-import mongodbLogo from "../images/mongodb_logo.svg";
-import reactLogo from "../images/react_logo.svg";
-import expressLogo from "../images/express_logo.svg";
+import htmlLogo from "../images/html5_logo.svg";
+import cssLogo from "../images/css3_logo.svg";
+import javascriptLogo from "../images/javascript_logo.svg";
+import sassLogo from "../images/sass_logo.svg";
 import content from "../services/content";
 
 export default function Unit_three(props) {
@@ -16,22 +16,52 @@ export default function Unit_three(props) {
       <Nav />
       <div className="tech-icons-container">
         <div className="unit-heading">
-          <h2>Heading</h2>
-          <h3>This is a great place for a sub-head</h3>
+          <h2>
+            {unitContent.map((unitContent) => (
+              <div>{unitContent.title}</div>
+            ))}
+          </h2>
+          <h3>
+            {unitContent.map((unitContent) => (
+              <div>{unitContent.subject}</div>
+            ))}
+          </h3>
         </div>
+
         <div className="tech-icons">
-          <img src={nodejsLogo} className="nodejs-logo" alt="Nodejs logo" />
-          <img src={mongodbLogo} className="mongodb-logo" alt="Mongodb logo" />
-          <img src={reactLogo} className="react-logo" alt="React logo" />
-          <img src={expressLogo} className="express-logo" alt="Express logo" />
+          <img src={htmlLogo} className="html-logo" alt="HTML logo" />
+          <img src={cssLogo} className="css-logo" alt="CSS logo" />
+          <img src={javascriptLogo} className="js-logo" alt="Javascript logo" />
+          <img src={sassLogo} className="sass-logo" alt="Sass logo" />
         </div>
       </div>
       <div className="lesson-description">
-        <p className="current-lesson">03</p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+        <div className="current-lesson">
+          {unitContent.map((unitContent) => (
+            <div>{unitContent.unit}</div>
+          ))}
+        </div>
+        
+        <div>
+          {unitContent.map((unitContent) => (
+            <div>{unitContent.videoLink}</div>
+          ))}
+        </div>
+        <div>
+        {unitContent.map((unitContent) => (
+            <div>{unitContent.markdownLink}</div>
+          ))}
+        </div>
+        <div>
+        {unitContent.map((unitContent) => (
+            <div>{unitContent.resourceLink}</div>
+          ))}
+        </div>
+        <div>
+          {unitContent.map((unitContent) => (
+            <div>{unitContent.tags}</div>
+          ))}
+        </div>
       </div>
       <hr />
     </div>
